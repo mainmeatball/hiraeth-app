@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hiraeth Backend</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+<body>
+    <h1>Hiraeth Backend</h1>
+
+    <p>Create entity</p>
+    <form action="#" th:action="@{/backend}" th:object="${entity}" method="post">
+        <label for="name">Name: </label>
+        <input id="name" type="text" th:field="*{name}">
+        <button type="submit">Save!</button>
+    </form>
+
+    <p>Find entity by id</p>
+    <form action="#" th:action="@{/backend}" method="get">
+        <label for="id">Find by Id: </label>
+        <input id="id" type="number" th:name="id">
+        <button type="submit">Find by id!</button>
+    </form>
+
+    <p>Find entity by name</p>
+    <form action="#" th:action="@{/backend}" method="get">
+        <label for="name_param">Find by name: </label>
+        <input id="name_param" type="text" th:name="name">
+        <button type="submit">Find by name!</button>
+    </form>
+
+    <p>Update entity</p>
+    <form action="#" th:action="@{/backend}" th:object="${entity}" method="post">
+        <label for="upd_id">Entity Id: </label>
+        <input id="upd_id" type="number" th:field="*{id}">
+        <label for="upd_name">New name: </label>
+        <input id="upd_name" type="text" th:field="*{name}">
+        <button type="submit">Update!</button>
+    </form>
+</body>
+</html>
