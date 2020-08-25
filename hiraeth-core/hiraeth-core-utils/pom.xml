@@ -4,17 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.hiraeth.app</groupId>
-        <artifactId>hiraeth-app-parent</artifactId>
+        <artifactId>hiraeth-core</artifactId>
+        <groupId>com.hiraeth.core</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.hiraeth.core</groupId>
-    <artifactId>hiraeth-core</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
-
-    <modules>
-        <module>hiraeth-core-persistence</module>
-        <module>hiraeth-core-utils</module>
-    </modules>
+    <groupId>com.hiraeth.core.utils</groupId>
+    <artifactId>hiraeth-core-utils</artifactId>
+    <packaging>jar</packaging>
 </project>

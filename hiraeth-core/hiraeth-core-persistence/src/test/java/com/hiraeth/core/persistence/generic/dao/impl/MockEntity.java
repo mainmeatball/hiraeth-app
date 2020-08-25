@@ -1,4 +1,4 @@
-package com.hiraeth.backend.entity;
+package com.hiraeth.core.persistence.generic.dao.impl;
 
 import com.hiraeth.core.persistence.generic.entity.AbstractEntity;
 
@@ -9,14 +9,14 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "hiraeth")
-public class NameAwareEntity extends AbstractEntity {
+public class MockEntity extends AbstractEntity {
 
     private String name;
 
-    public NameAwareEntity() {
+    public MockEntity() {
     }
 
-    public NameAwareEntity(String name) {
+    public MockEntity(String name) {
         this.name = name;
     }
 
