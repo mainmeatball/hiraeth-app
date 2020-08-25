@@ -25,7 +25,7 @@
         </dependency>
         <dependency>
             <groupId>com.hiraeth.core.persistence</groupId>
-            <artifactId>hiraeth-persistence-core</artifactId>
+            <artifactId>hiraeth-core-persistence</artifactId>
             <version>${hiraeth.version}</version>
         </dependency>
     </dependencies>
