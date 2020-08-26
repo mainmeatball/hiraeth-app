@@ -4,6 +4,8 @@ import com.hiraeth.core.persistence.generic.dao.AbstractGenericDao;
 import com.hiraeth.core.persistence.generic.entity.AbstractEntity;
 import com.hiraeth.core.utils.function.TriFunction;
 import com.hiraeth.core.persistence.generic.service.GenericService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -17,6 +19,8 @@ public abstract class GenericServiceImpl<E extends AbstractEntity, DAO extends A
         implements GenericService<E> {
 
     private DAO dao;
+
+    protected final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     public DAO getDao() {
         return dao;
