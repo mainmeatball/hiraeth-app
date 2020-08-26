@@ -2,6 +2,8 @@ package com.hiraeth.core.persistence.generic.dao;
 
 import com.hiraeth.core.persistence.generic.entity.AbstractEntity;
 import com.hiraeth.core.utils.function.TriFunction;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
@@ -16,6 +18,8 @@ import java.util.Map;
 public abstract class AbstractGenericDao<T extends AbstractEntity> implements GenericDao<T> {
 
     private final Class<T> persistentClass;
+
+    protected final Logger logger = LoggerFactory.getLogger(this.getClass());
 
     @SuppressWarnings("unchecked")
     public AbstractGenericDao() {
