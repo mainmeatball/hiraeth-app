@@ -8,7 +8,6 @@
         <groupId>com.hiraeth.core</groupId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.hiraeth.core.utils</groupId>
     <artifactId>hiraeth-core-utils</artifactId>
     <packaging>jar</packaging>
 </project>

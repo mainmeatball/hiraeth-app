@@ -15,11 +15,31 @@
     <packaging>pom</packaging>
 
     <properties>
-        <java.version>13</java.version>
+        <java.version>11</java.version>
         <hiraeth.version>1.0.0-SNAPSHOT</hiraeth.version>
     </properties>
 
     <modules>
         <module>hiraeth-app</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.hiraeth.app.HiraethApplication</mainClass>
+                    <classifier>exec</classifier>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 </project>
