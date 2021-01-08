@@ -8,8 +8,8 @@
         <artifactId>hiraeth-app-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.hiraeth.backend</groupId>
-    <artifactId>hiraeth-backend</artifactId>
+    <groupId>com.hiraeth</groupId>
+    <artifactId>demo</artifactId>
     <packaging>jar</packaging>
 
     <dependencies>
@@ -18,9 +18,10 @@
             <artifactId>hiraeth-app</artifactId>
             <version>${hiraeth.version}</version>
         </dependency>
+
         <dependency>
-            <groupId>com.hiraeth.core.persistence</groupId>
-            <artifactId>hiraeth-core-persistence</artifactId>
+            <groupId>com.hiraeth.backend</groupId>
+            <artifactId>hiraeth-backend</artifactId>
             <version>${hiraeth.version}</version>
         </dependency>
     </dependencies>
