@@ -4,9 +4,9 @@
        xsi:schemaLocation="
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="hiraethDataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <bean id="hiraethDataSource" class="com.zaxxer.hikari.HikariDataSource">
         <property name="driverClassName" value="org.postgresql.Driver"/>
-        <property name="url" value="jdbc:postgresql://localhost:5432/hiraeth"/>
+        <property name="jdbcUrl" value="jdbc:postgresql://localhost:5434/hiraeth"/>
         <property name="username" value="hiraeth"/>
         <property name="password" value="hiraeth"/>
     </bean>

@@ -18,7 +18,6 @@
             <artifactId>hiraeth-app</artifactId>
             <version>${hiraeth.version}</version>
         </dependency>
-
         <dependency>
             <groupId>com.hiraeth.backend</groupId>
             <artifactId>hiraeth-backend</artifactId>
